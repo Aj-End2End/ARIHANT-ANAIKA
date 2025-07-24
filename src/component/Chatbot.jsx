@@ -244,7 +244,7 @@ const Chatbot = () => {
   useEffect(() => {
     if (isOpen && messages.length === 0) {
       addMessage(
-        "Hey, I am Vaishnavi Singh ! Welcome to Arihant Anaika Project."
+        "Hey, I am Venkatesh Rathod ! Welcome to Arihant Anaika Project."
       );
     }
   }, [isOpen]);
@@ -284,7 +284,7 @@ const Chatbot = () => {
             </text>
           </svg>
           <img
-            src="/images/chat-profile.gif"
+            src="images/venkatesh.jpg"
             alt="Chat"
             className="chat-profile"
           />
@@ -294,12 +294,12 @@ const Chatbot = () => {
           <div className="chatbot-window">
             <div className="chatbot-header">
               <img
-                src="/images/chat-profile.gif"
+                src="images/venkatesh.jpg"
                 alt="Agent"
                 className="agent-profile"
               />
               <div className="agent-info">
-                <h3>Vaishnavi Singh</h3>
+                <h3>Venkatesh Rathod</h3>
               </div>
               <button className="close-button" onClick={() => setIsOpen(false)}>
                 ×

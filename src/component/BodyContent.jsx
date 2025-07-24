@@ -353,50 +353,22 @@ const BodyContent = () => {
         </div>
 
         <section id="virtual-tour">
-          <div className="content">
-            <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-[48px] font-bold text-center my-8 transition-all duration-300">
+          <div className="content max-w-7xl mx-auto mt-12">
+            <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-[42px] font-bold text-center my-6 transition-all duration-300">
               VIRTUAL TOUR
             </h1>
-            <div className="section-header-underline" />
-            <div className="video-gallery lg:flex md:flex">
-              <div
-                className="gallery-item "
-                onClick={() => handleOpenModal("Enquiry")}
-              >
-                <img
-                  src="images/BANNER/ARIHANT ANAIKA  BANNER 1.jpg"
-                  alt="Prestige Jasdan Classic Tour"
-                />
-                <div className="gallery-item-caption">
-                  <div>
-                    <h2
-                      className="text-center"
-                      style={{ fontSize: "1.5em", fontWeight: "400" }}
-                    >
-                      ARIHANT ANAIKA, TALOJA{" "}
-                    </h2>
-                    <p />
-                  </div>
-                </div>
-              </div>
-              <div
-                className="gallery-item"
-                onClick={() => handleOpenModal("Enquiry")}
-              >
-                <img
-                  src="images/GALLERY/ARIHANT ANAIKA  GALLERY 6.jpg"
-                  alt="Home Tour"
-                />
-                <div className="gallery-item-caption">
-                  <div>
-                    <h2
-                      className="text-center"
-                      style={{ fontSize: "1.5em", fontWeight: "400" }}
-                    >
-                      Sample Flat
-                    </h2>
-                    <p />
-                  </div>
+            {/* <div className="section-header-underline" /> */}
+            <div className="video-gallery w-full mx-auto px-4 flex justify-center items-center">
+              <div className="gallery-item w-full">
+                <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, margin: '0 auto' }}>
+                  <iframe
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                    src="https://www.youtube.com/embed/ebVAFqYUti0?rel=0"
+                    title="Arihant Aalishan Tour"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                    allowFullScreen
+                  ></iframe>
                 </div>
               </div>
             </div>
